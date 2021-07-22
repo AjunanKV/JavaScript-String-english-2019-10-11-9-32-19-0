@@ -7,13 +7,18 @@ console.log("'"+name+"'")
 
 
 // Complete the following procedure, capitalizing all the words in the variable sentence and printing: 'Good Afternoon, Mr Mike.'
-var sentence = 'good afternoon, mr mike.';
+var sentence = 'good afternoon, mr mike.'; 
 //TODO write your code here...
  var wholeword = "";
- var words = sentence.split(" ");
+ var words = sentence.split(" "); 
+console.log(words.length);
  for (let i = 0; i < words.length; i++) {
      words[i] = words[i][0].toUpperCase() + words[i].substr(1);
-     wholeword+=words[i]+=' ';
+      wholeword+=words[i]; 
+       if(i<words.length-1) 
+     {
+         wholeword+=" ";
+     }
  }
  console.log(wholeword);
 
